@@ -155,7 +155,7 @@ If you use this fork, please cite both the original and this fork:
   author = {BlackArbsCEO},
   title = {BorutaShap Modern Fork: Compatible with NumPy 2.0+},
   url = {https://github.com/BlackArbsCEO/Boruta-Shap},
-  year = {2024}
+  year = {2025}
 }
 ```
 
