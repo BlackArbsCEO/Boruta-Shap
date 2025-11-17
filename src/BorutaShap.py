@@ -445,7 +445,9 @@ class BorutaShap:
 
         if self.sample: self.preds = self.isolation_forest(self.X, self.sample_weight)
 
-        for trial in tqdm(range(self.n_trials)):
+        # Use tqdm only if verbose=True
+        iterator = tqdm(range(self.n_trials)) if verbose else range(self.n_trials)
+        for trial in iterator:
 
             self.remove_features_if_rejected()
             self.columns = self.X.columns.to_numpy()
